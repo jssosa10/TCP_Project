@@ -73,7 +73,7 @@ public class ThreadDescarga extends SwingWorker<Void,Void> implements InterfazCa
 				if(cantBytes>=actual.darTamano())
 				{
 					System.out.println("sniffiwi");
-					//break;
+					break;
 				}
 			}
 			System.out.println("sale solo");
