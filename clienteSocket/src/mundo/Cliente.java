@@ -13,7 +13,6 @@ import java.util.concurrent.ExecutionException;
 
 import javax.swing.SwingWorker;
 
-import interfaz.ThreadDesconectar;
 
 public class Cliente {
 
@@ -54,7 +53,7 @@ public class Cliente {
 	
 	public boolean conectarse() throws UnknownHostException, IOException, InterruptedException, ExecutionException
 	{
-		socket= new Socket("localhost",PUERTO);
+		socket= new Socket(SERVIDOR,PUERTO);
 		estado=CONECTADO;
 
 		in = socket.getInputStream();

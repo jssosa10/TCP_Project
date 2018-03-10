@@ -29,15 +29,18 @@ public class ThreadListar extends SwingWorker<Archivo[], String>{
 
 	@Override
 	protected Archivo[] doInBackground() throws Exception {
-		out.println(cat.darNombre());
+		System.out.println("getdir:" + cat.darNombre());
+		out.println("getdir:" + cat.darNombre());	
 		out.flush();
-		
 		byte[] buffer = new byte[1024]; // or 4096, or more
 		BufferedReader bf= new BufferedReader(new InputStreamReader(in));
 		String text=bf.readLine();
-		char[] chars= text.toCharArray();
+		System.out.println("texto sosa "+ text);
 		text=text.trim();
-
+		if(text.trim().isEmpty())
+		{
+			return null;
+		}
 		String[] archivoStr= text.split(";");
 		Archivo[] archivos= new Archivo[archivoStr.length];
 		for (int i = 0; i < archivoStr.length; i++) 

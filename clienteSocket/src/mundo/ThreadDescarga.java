@@ -2,12 +2,14 @@ package mundo;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
+import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.net.Socket;
@@ -52,16 +54,17 @@ public class ThreadDescarga extends SwingWorker<Void,Void> implements InterfazCa
 				dir.mkdirs();
 			}
 			String ruta= "./docs/"+categoria.darNombre()+"/"+actual.darRuta();
-			System.out.println(ruta);
 			archivoFinal = new File(ruta);
-			System.out.println("ruta M "+ actual.darRuta());
+			
 			out = new FileOutputStream(archivoFinal.getPath());
-			outP.println("DESCARGA:::" + categoria.darNombre()+":::"+actual.darRuta());			
+			System.out.println("getfile:"+actual.darRuta());
+			outP.println("getfile:"+categoria.darNombre()+"/"+actual.darRuta());		
+
 			int count;
 			byte[] buffer = new byte[1024]; // or 4096, or more
 			int cantBytes=0;
 
-			while ((count = in.read(buffer)) > 0 && !cancelado)
+			while ((count = in.read(buffer)) > 0)
 			{
 				out.write(buffer, 0, count);
 				for (int i = 0; i < buffer.length; i++) {
@@ -72,11 +75,12 @@ public class ThreadDescarga extends SwingWorker<Void,Void> implements InterfazCa
 				progresor.actualizarProgreso(porcentaje);
 				if(cantBytes>=actual.darTamano())
 				{
-					System.out.println("sniffiwi");
 					break;
 				}
 			}
-			System.out.println("sale solo");
+			BufferedReader bf= new BufferedReader(new InputStreamReader(in));
+			String text= bf.readLine();
+			System.out.println("textu "+ text);
 			out.close();
 			
 		} catch (UnknownHostException e) {

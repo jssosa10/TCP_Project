@@ -8,6 +8,8 @@ public class Archivo {
 	public final static String RUTA_MP4="./data/mp4.png";
 	public final static String RUTA_TXT="./data/txt.png";
 	public final static String RUTA_PDF="./data/pdf.png";
+	public final static String RUTA_MD="./data/md.png";
+	public final static String RUTA_LANGUAGE="./data/language.png";
 	
 	public Archivo(String pRuta, int pTamano)
 	{
@@ -23,6 +25,14 @@ public class Archivo {
 		else if(ruta.endsWith("pdf"))
 		{
 			rutaImg=RUTA_PDF;
+		}
+		else if(ruta.endsWith("md"))
+		{
+			rutaImg=RUTA_MD;
+		}
+		else if(ruta.endsWith("py") || ruta.endsWith("cpp"))
+		{
+			rutaImg=RUTA_LANGUAGE;
 		}
 		else
 		{
@@ -44,8 +54,7 @@ public class Archivo {
 	}
 
 	public String darNombre() {
-		String[]partes= ruta.split("\\.");
-		System.out.println("r "+ruta);
-		return partes[0];
+		System.out.println(ruta);
+		return ruta.substring(0,ruta.lastIndexOf("."));
 	}
 }

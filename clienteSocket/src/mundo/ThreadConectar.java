@@ -31,13 +31,10 @@ public class ThreadConectar extends SwingWorker<Boolean, String>{
 
 		byte[] buffer = new byte[6]; // or 4096, or more
 		BufferedReader bf= new BufferedReader(new InputStreamReader(in));
-		/**
-		in.read(buffer);
-		String text = new String(buffer, StandardCharsets.UTF_8);
-		*/
 		
 		String text=bf.readLine();
 		char[] chars=text.toCharArray();
+		System.out.println("text1 "+text);
 		if(text.equals("Holiwi"))
 		{
 			return true;
