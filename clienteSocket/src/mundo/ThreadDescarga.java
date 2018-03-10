@@ -62,7 +62,7 @@ public class ThreadDescarga extends SwingWorker<Void,Void> implements InterfazCa
 
 			int count;
 			byte[] buffer = new byte[1024]; // or 4096, or more
-			int cantBytes=0;
+			long cantBytes=0;
 
 			while ((count = in.read(buffer)) > 0)
 			{
@@ -71,16 +71,27 @@ public class ThreadDescarga extends SwingWorker<Void,Void> implements InterfazCa
 					System.out.println("bytes recibidos: "+buffer[i]);
 					cantBytes++;
 				}				
-				int porcentaje= cantBytes*100/actual.darTamano();
+				if(cancelado)
+				{
+					break;
+				}
+				else
+				{
+					outP.println("ok");
+				}
+				int porcentaje= (int) (cantBytes*100/actual.darTamano());
 				progresor.actualizarProgreso(porcentaje);
 				if(cantBytes>=actual.darTamano())
 				{
 					break;
 				}
 			}
+			System.out.println("salio");
+			/**
 			BufferedReader bf= new BufferedReader(new InputStreamReader(in));
 			String text= bf.readLine();
-			System.out.println("textu "+ text);
+			System.out.println("fin descarga "+ text);
+			*/
 			out.close();
 			
 		} catch (UnknownHostException e) {
@@ -98,6 +109,16 @@ public class ThreadDescarga extends SwingWorker<Void,Void> implements InterfazCa
 		if(cancelado)
 		{
 			outP.println("Cancelar");
+			BufferedReader bf= new BufferedReader(new InputStreamReader(in));
+			String text="";
+			try {
+				System.out.println(bf.readLine());
+				text = bf.readLine();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			System.out.println("fin descarga "+ text);
 			interfazCompletado.completado(null);
 		}
 		else

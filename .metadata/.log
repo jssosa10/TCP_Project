@@ -449,3 +449,125 @@ org.eclipse.core.runtime.CoreException: No property tester contributes a propert
 
 !ENTRY org.eclipse.jface.text 2 0 2018-03-09 18:41:50.673
 !MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2018-03-10 13:54:50.591 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_CO
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jdt.launching 1 0 2018-03-10 13:55:05.045
+!MESSAGE Installed JRE 'Java-SE8-CP2' removed due to missing VM type extension.
+
+!ENTRY org.eclipse.jdt.launching 1 0 2018-03-10 13:55:05.045
+!MESSAGE Installed JRE 'Java-SE8-CP2' removed due to missing VM type extension.
+
+!ENTRY org.eclipse.jdt.launching 1 0 2018-03-10 13:55:05.046
+!MESSAGE Installed JRE 'Java-SE8-CP2' removed due to missing VM type extension.
+
+!ENTRY org.eclipse.jdt.launching 1 0 2018-03-10 13:55:05.046
+!MESSAGE Installed JRE 'Java-SE8-CP2' removed due to missing VM type extension.
+
+!ENTRY org.eclipse.jdt.launching 1 0 2018-03-10 13:55:05.046
+!MESSAGE Installed JRE 'Java-CDC' removed due to missing VM type extension.
+
+!ENTRY org.eclipse.jdt.launching 1 0 2018-03-10 13:55:05.047
+!MESSAGE Installed JRE 'Java-SE8-CP2' removed due to missing VM type extension.
+
+!ENTRY org.eclipse.jdt.launching 1 0 2018-03-10 13:55:05.047
+!MESSAGE Installed JRE 'Java-CDC' removed due to missing VM type extension.
+
+!ENTRY org.eclipse.jdt.launching 1 0 2018-03-10 13:55:05.047
+!MESSAGE Installed JRE 'Java-SE8-CP2' removed due to missing VM type extension.
+
+!ENTRY org.eclipse.jdt.launching 1 0 2018-03-10 13:55:05.047
+!MESSAGE Installed JRE 'Java-SE8-CP2' removed due to missing VM type extension.
+
+!ENTRY org.eclipse.jdt.launching 1 0 2018-03-10 13:55:05.047
+!MESSAGE Installed JRE 'Java-SE8-CP2' removed due to missing VM type extension.
+
+!ENTRY org.eclipse.jdt.launching 1 0 2018-03-10 13:55:05.048
+!MESSAGE Installed JRE 'Java-SE8-CP2' removed due to missing VM type extension.
+
+!ENTRY org.eclipse.jdt.launching 1 0 2018-03-10 13:55:05.048
+!MESSAGE Installed JRE 'Java-SE8-CP2' removed due to missing VM type extension.
+
+!ENTRY org.eclipse.jdt.launching 1 0 2018-03-10 13:55:05.048
+!MESSAGE Installed JRE 'Java-CDC' removed due to missing VM type extension.
+
+!ENTRY org.eclipse.jdt.launching 1 0 2018-03-10 13:55:05.048
+!MESSAGE Installed JRE 'Java-SE8-CP2' removed due to missing VM type extension.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-03-10 13:55:15.060
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\cm.sarmiento10'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2018-03-10 13:55:16.331
+!MESSAGE Removing part descriptor with the 'com.python.pydev.ui.hierarchy.PyHierarchyView' id and the 'Hierarchy View' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2018-03-10 13:55:16.343
+!MESSAGE Removing part descriptor with the 'com.python.pydev.analysis.indexview.PyIndexView' id and the 'Index View' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2018-03-10 13:55:16.343
+!MESSAGE Removing part descriptor with the 'oracle.eclipse.tools.adf.debugger.ui.AdfStructureView' id and the 'ADF Structure and Data' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2018-03-10 13:55:16.344
+!MESSAGE Removing part descriptor with the 'oracle.eclipse.tools.adf.debugger.ui.AdfElEvaluatorView' id and the 'ADF EL Evaluator' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2018-03-10 13:55:16.344
+!MESSAGE Removing part descriptor with the 'oracle.eclipse.tools.adf.ui.connectionsView' id and the 'Connections' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2018-03-10 13:55:16.345
+!MESSAGE Removing part descriptor with the 'oracle.eclipse.tools.cloud.ui.InstanceLogView' id and the 'Oracle Java Cloud Service Instance Log' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2018-03-10 13:55:16.345
+!MESSAGE Removing part descriptor with the 'oracle.eclipse.tools.cloud.ui.server.internal.view.JobsView' id and the 'Oracle Java Cloud Service Jobs' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2018-03-10 13:55:16.345
+!MESSAGE Removing part descriptor with the 'oracle.eclipse.tools.cloud.ui.CloudProfileView' id and the 'Oracle Cloud' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2018-03-10 13:55:16.346
+!MESSAGE Removing part descriptor with the 'oracle.eclipse.tools.jaxrs.ui.properties.RestPropertiesView' id and the 'REST Annotations' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2018-03-10 13:55:16.346
+!MESSAGE Removing part descriptor with the 'oracle.eclipse.tools.weblogic.scripting.ui.views.WLSTHelpView' id and the 'WLST Help' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2018-03-10 13:55:16.347
+!MESSAGE Removing part descriptor with the 'oracle.eclipse.tools.webservices.ui.properties.jws.view.WebServicePropertiesView' id and the 'WebLogic Web Service Annotations' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2018-03-10 13:55:16.357
+!MESSAGE Removing part descriptor with the 'org.eclipse.mylyn.builds.navigator.builds' id and the 'Builds' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2018-03-10 13:55:16.359
+!MESSAGE Removing part descriptor with the 'org.eclipse.mylyn.reviews.Explorer' id and the 'Review' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2018-03-10 13:55:16.363
+!MESSAGE Removing part descriptor with the 'org.eclipse.team.ccvs.ui.RepositoriesView' id and the 'CVS Repositories' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2018-03-10 13:55:16.364
+!MESSAGE Removing part descriptor with the 'org.eclipse.team.ccvs.ui.EditorsView' id and the 'CVS Editors' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2018-03-10 13:55:16.385
+!MESSAGE Removing part descriptor with the 'org.python.pydev.navigator.view' id and the 'PyDev Package Explorer' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2018-03-10 13:55:16.388
+!MESSAGE Removing part descriptor with the 'org.python.pydev.views.PyCodeCoverageView' id and the 'Code Coverage' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2018-03-10 13:55:16.388
+!MESSAGE Removing part descriptor with the 'org.python.pydev.debug.pyunit.pyUnitView' id and the 'PyUnit' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.jface.text 2 0 2018-03-10 14:06:26.544
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-03-10 14:06:26.545
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-03-10 16:47:48.360
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-03-10 16:47:48.361
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'

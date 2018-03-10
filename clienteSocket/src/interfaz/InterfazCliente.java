@@ -94,11 +94,9 @@ public class InterfazCliente extends JFrame implements InterfazCompletado{
 
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			JOptionPane.showMessageDialog(this, "Hubo timeout");
 		}
 	}
-
-
 
 	public void descargar(Archivo archivo) {
 		panelArchivos.deshabilitarBotones();
@@ -106,7 +104,12 @@ public class InterfazCliente extends JFrame implements InterfazCompletado{
 		remove(panelVolver);
 		add(panelProgreso, BorderLayout.SOUTH);
 		validate();
-		mundo.descargar(archivo, this);
+		try {
+			mundo.descargar(archivo, this);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			JOptionPane.showMessageDialog(this, "Hubo timeout");
+		}
 	}
 
 
@@ -120,18 +123,32 @@ public class InterfazCliente extends JFrame implements InterfazCompletado{
 		validate();
 	}
 
-	public void desconectar() {
+	public void validarBloqueado() throws Exception
+	{
+		mundo.validarBloqueado();
+		JOptionPane.showMessageDialog(this, "Hubo timeout");
+	}
+
+	public void desconectar(boolean b) {
 		try {
-			mundo.desconectar();
+			mundo.desconectar(b);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}		
 		System.out.println("llega desconectar");
 		panelDesconectar.invalidate();
-		remove(panelDesconectar);
-		remove(panelCategorias);
-
+		if(panelArchivos!=null)
+		{
+			panelArchivos.invalidate();
+		}
+		if(panelCategorias!=null)
+		{
+			panelCategorias.invalidate();
+		}
+		removeAll();
+		System.out.println("llega2");
+		add(panelEstado, BorderLayout.NORTH);
 		add(panelIniciar, BorderLayout.CENTER);	
 		add(panelEstado, BorderLayout.NORTH);
 
@@ -157,7 +174,7 @@ public class InterfazCliente extends JFrame implements InterfazCompletado{
 	public void completado(File archivoFinal) {
 		if(archivoFinal==null)
 		{
-						
+
 		}
 		else
 		{
@@ -170,7 +187,7 @@ public class InterfazCliente extends JFrame implements InterfazCompletado{
 			}
 		}
 	}
-	
+
 	public void volver2()
 	{
 		panelArchivos.invalidate();

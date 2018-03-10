@@ -2,4 +2,8 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="javax.swing.JLabel"/>
 <fullyQualifiedTypeName name="javax.swing.ImageIcon"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+<fullyQualifiedTypeName name="java.awt.BorderLayout"/>
+<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
 </qualifiedTypeNameHistroy>

@@ -5,6 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JProgressBar;
 
@@ -31,7 +32,14 @@ public class PanelDesconectar extends JPanel implements ActionListener{
 		String accion= e.getActionCommand();
 		if(accion.equals(DESCONECTAR))
 		{
-			interfaz.desconectar();
+			try {
+				interfaz.validarBloqueado();
+			} catch (Exception e1) {
+				// TODO Auto-generated catch block
+				JOptionPane.showMessageDialog(interfaz, "Hubo timeout");
+				return;
+			}
+			interfaz.desconectar(true);
 		}
 		
 	}

@@ -33,7 +33,6 @@ public class ThreadConectar extends SwingWorker<Boolean, String>{
 		BufferedReader bf= new BufferedReader(new InputStreamReader(in));
 		
 		String text=bf.readLine();
-		char[] chars=text.toCharArray();
 		System.out.println("text1 "+text);
 		if(text.equals("Holiwi"))
 		{

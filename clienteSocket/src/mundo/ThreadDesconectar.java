@@ -12,22 +12,24 @@ public class ThreadDesconectar extends SwingWorker<Void, Void>{
 	private Socket socket;	
 	private InputStream in;	
 	private PrintWriter out;
+	private boolean bul;
 
-	public ThreadDesconectar(Socket pSocket, InputStream pIn, PrintWriter pOut)
+	public ThreadDesconectar(Socket pSocket, InputStream pIn, PrintWriter pOut, boolean b)
 	{
 		socket=pSocket;
 		in=pIn;
 		out=pOut;		
+		bul=b;
 	}
 
 
 	@Override
 	protected Void doInBackground() throws Exception {
-		out.println("Adios");
-
+		if(bul)
+		{
+			out.println("Adios");
+		}
 		try {
-			in.close();
-			out.close();
 			socket.close();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
