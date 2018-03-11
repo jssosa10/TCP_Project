@@ -35,7 +35,7 @@ public class ThreadListar extends SwingWorker<Archivo[], String>{
 		byte[] buffer = new byte[1024]; // or 4096, or more
 		BufferedReader bf= new BufferedReader(new InputStreamReader(in));
 		String text=bf.readLine();
-		System.out.println("texto sosa "+ text);
+		System.out.println("texto recibido "+ text);
 		text=text.trim();
 		if(text.trim().isEmpty())
 		{

@@ -132,9 +132,9 @@ public class InterfazCliente extends JFrame implements InterfazCompletado{
 		JOptionPane.showMessageDialog(this, "Hubo timeout");
 	}
 
-	public void desconectar(boolean b) {
+	public void desconectar() {
 		try {
-			mundo.desconectar(b);
+			mundo.desconectar();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

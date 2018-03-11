@@ -39,7 +39,7 @@ public class PanelDesconectar extends JPanel implements ActionListener{
 				JOptionPane.showMessageDialog(interfaz, "Hubo timeout");
 				return;
 			}
-			interfaz.desconectar(true);
+			interfaz.desconectar();
 		}
 		
 	}

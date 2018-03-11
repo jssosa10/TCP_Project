@@ -114,8 +114,8 @@ public class Cliente {
 		return list.get();
 	}
 
-	public void desconectar(boolean b) throws IOException {
-		new ThreadDesconectar(socket,in,out,b).execute();		
+	public void desconectar() throws IOException {
+		new ThreadDesconectar(socket,in,out).execute();		
 		estado=DESCONECTADO;
 		estador.actualizarEstado(estado);
 	}

@@ -33,7 +33,7 @@ public class ThreadConectar extends SwingWorker<Boolean, String>{
 		BufferedReader bf= new BufferedReader(new InputStreamReader(in));
 		
 		String text=bf.readLine();
-		System.out.println("text1 "+text);
+		System.out.println("Llega conectar "+text);
 		if(text.equals("Holiwi"))
 		{
 			return true;
