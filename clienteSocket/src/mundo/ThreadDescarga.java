@@ -54,7 +54,7 @@ public class ThreadDescarga extends SwingWorker<Void,Void> implements InterfazCa
 			}
 			String ruta= "./docs/"+categoria.darNombre()+"/"+actual.darRuta();
 			archivoFinal = new File(ruta);
-			
+			archivoFinal.createNewFile();
 			out = new FileOutputStream(archivoFinal.getPath());
 			System.out.println("Se va a escribir:"+categoria.darNombre()+"/"+actual.darRuta());
 			outP.println("getfile:"+categoria.darNombre()+"/"+actual.darRuta());		
