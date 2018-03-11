@@ -39,7 +39,6 @@ public class ThreadDescarga extends SwingWorker<Void,Void> implements InterfazCa
 		outP=pOut;
 		actual=a;
 		progresor= pProgresor;
-		System.out.println("progre "+ progresor);
 		categoria=c;
 		interfazCompletado=completador;
 	}	
@@ -57,7 +56,7 @@ public class ThreadDescarga extends SwingWorker<Void,Void> implements InterfazCa
 			archivoFinal = new File(ruta);
 			
 			out = new FileOutputStream(archivoFinal.getPath());
-			System.out.println("getfile:"+actual.darRuta());
+			System.out.println("Se va a escribir:"+categoria.darNombre()+"/"+actual.darRuta());
 			outP.println("getfile:"+categoria.darNombre()+"/"+actual.darRuta());		
 
 			int count;
@@ -86,12 +85,6 @@ public class ThreadDescarga extends SwingWorker<Void,Void> implements InterfazCa
 					break;
 				}
 			}
-			System.out.println("salio");
-			/**
-			BufferedReader bf= new BufferedReader(new InputStreamReader(in));
-			String text= bf.readLine();
-			System.out.println("fin descarga "+ text);
-			*/
 			out.close();
 			
 		} catch (UnknownHostException e) {

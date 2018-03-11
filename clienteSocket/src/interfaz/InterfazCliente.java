@@ -94,6 +94,7 @@ public class InterfazCliente extends JFrame implements InterfazCompletado{
 
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
+			panelEstado.actualizarEstado(Cliente.DESCONECTADO);
 			JOptionPane.showMessageDialog(this, "Hubo timeout");
 		}
 	}
@@ -108,6 +109,7 @@ public class InterfazCliente extends JFrame implements InterfazCompletado{
 			mundo.descargar(archivo, this);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
+			panelEstado.actualizarEstado(Cliente.DESCONECTADO);
 			JOptionPane.showMessageDialog(this, "Hubo timeout");
 		}
 	}
@@ -126,6 +128,7 @@ public class InterfazCliente extends JFrame implements InterfazCompletado{
 	public void validarBloqueado() throws Exception
 	{
 		mundo.validarBloqueado();
+		panelEstado.actualizarEstado(Cliente.DESCONECTADO);
 		JOptionPane.showMessageDialog(this, "Hubo timeout");
 	}
 
